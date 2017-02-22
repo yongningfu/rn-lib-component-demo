@@ -36,6 +36,10 @@ const getSceneStyle = (props, computedProps) => {
 
 import {Scene, Router} from 'react-native-router-flux';
 
+
+import ReactNativeVideoPage from './src/pages/ReactNativeVideoPage.js';
+
+
 class App extends React.Component {
   render() {
     return (
@@ -44,6 +48,7 @@ class App extends React.Component {
       >
         <Scene key="root">
           <Scene key="DefaultPage" component={DefaultPage} title="index"/>
+          <Scene key="ReactNativeVideoPage" component={ReactNativeVideoPage} title="react-native-video"/>
         </Scene>
     </Router>)
   }

@@ -8,7 +8,7 @@ import { List } from 'antd-mobile';
 const Item = List.Item;
 const Brief = Item.Brief;
 
-import { Button } from 'antd-mobile';
+import { Actions } from 'react-native-router-flux';
 
 export default class DefaultPage extends Component {
   constructor(props) {
@@ -22,8 +22,8 @@ export default class DefaultPage extends Component {
         <Item
           thumb="https://zos.alipayobjects.com/rmsportal/dNuvNrtqUztHCwM.png"
           arrow="horizontal"
-          onClick={() => {}}
-        >demo1</Item>
+          onClick={() => { Actions.ReactNativeVideoPage({}) }}
+        >react-native-video</Item>
         <Item thumb="https://zos.alipayobjects.com/rmsportal/UmbJMbWOejVOpxe.png" arrow="horizontal">demo2</Item>
       </List>
       </View>
