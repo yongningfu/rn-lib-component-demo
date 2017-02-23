@@ -19,12 +19,24 @@ export default class DefaultPage extends Component {
     return (
       <View>
       <List renderHeader={() => 'react-native第三方组件使用demo'}>
-        <Item
-          thumb="https://zos.alipayobjects.com/rmsportal/dNuvNrtqUztHCwM.png"
-          arrow="horizontal"
-          onClick={() => { Actions.ReactNativeVideoPage({}) }}
-        >react-native-video</Item>
-        <Item thumb="https://zos.alipayobjects.com/rmsportal/UmbJMbWOejVOpxe.png" arrow="horizontal">demo2</Item>
+        <Item thumb="https://zos.alipayobjects.com/rmsportal/dNuvNrtqUztHCwM.png"
+              arrow="horizontal"
+              onClick={() => { Actions.ReactNativeVideoPage({}) }}>
+          react-native-video
+        </Item>
+        <List renderHeader={() => 'react-native audio react-native-sound(需要先对官方版本录音)'}>
+          <Item thumb="https://zos.alipayobjects.com/rmsportal/UmbJMbWOejVOpxe.png" 
+                arrow="horizontal"
+                onClick={() => { Actions.RecordAndPlayPageOfficalDemo({}) }}>
+            offical
+          </Item>
+          <Item thumb="https://zos.alipayobjects.com/rmsportal/UmbJMbWOejVOpxe.png"
+                arrow="horizontal"
+                onClick={() => { Actions.RecordAndPlayPageCustomDemo1({}) }}>
+            custom
+          </Item>
+        </List>
+        
       </List>
       </View>
     )

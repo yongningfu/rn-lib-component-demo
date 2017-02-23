@@ -138,7 +138,7 @@ export default class ReactNativeVideoPage extends Component {
 
           {
             this.state.download &&
-            <Video source={{uri: "http://123.207.233.226:5000/static/audio/1.wav"}}
+            <Video source={require('../../assets/1.wav')}
               ref={(ref) => { this.video = ref }}
               onLoadStart={this._onLoadStart}
               onBuffer={this._onBuffer}
