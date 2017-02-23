@@ -36,7 +36,11 @@ export default class DefaultPage extends Component {
             custom
           </Item>
         </List>
-        
+        <Item thumb="https://zos.alipayobjects.com/rmsportal/dNuvNrtqUztHCwM.png"
+              arrow="horizontal"
+              onClick={() => { Actions.UpAndDownloadFilePage({}) }}>
+          react-native-fetch-blob(上传下载)
+        </Item>
       </List>
       </View>
     )

@@ -39,7 +39,8 @@ import {Scene, Router} from 'react-native-router-flux';
 
 import ReactNativeVideoPage from './src/pages/ReactNativeVideoPage.js';
 import RecordAndPlayPageOfficalDemo from'./src/pages/RecordAndPlayPage/OfficalDemo.js';
-import RecordAndPlayPageCustomDemo1 from './src/pages/RecordAndPlayPage/CustomDemo1.js'
+import RecordAndPlayPageCustomDemo1 from './src/pages/RecordAndPlayPage/CustomDemo1.js';
+import UpAndDownloadFilePage from './src/pages/UpAndDownloadFilePage.js';
 
 class App extends React.Component {
   render() {
@@ -48,11 +49,12 @@ class App extends React.Component {
         getSceneStyle={getSceneStyle}
       >
         <Scene key="root">
-          {/*<Scene key="test" component={RecordAndPlayPageCustomDemo1} title="test"/>*/}
+          {/*<Scene key="test" component={UpAndDownloadFilePage} title="test"/>*/}
           <Scene key="DefaultPage" component={DefaultPage} title="index"/>
           <Scene key="ReactNativeVideoPage" component={ReactNativeVideoPage} title="react-native-video"/>
           <Scene key="RecordAndPlayPageOfficalDemo" component={RecordAndPlayPageOfficalDemo} title="audio sound"/>
           <Scene key="RecordAndPlayPageCustomDemo1" component={RecordAndPlayPageCustomDemo1} title="audio sound"/>
+          <Scene key="UpAndDownloadFilePage" component={UpAndDownloadFilePage} title="fetch-blob"/>
         </Scene>
     </Router>)
   }
