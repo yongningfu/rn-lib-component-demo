@@ -41,6 +41,7 @@ import ReactNativeVideoPage from './src/pages/ReactNativeVideoPage.js';
 import RecordAndPlayPageOfficalDemo from'./src/pages/RecordAndPlayPage/OfficalDemo.js';
 import RecordAndPlayPageCustomDemo1 from './src/pages/RecordAndPlayPage/CustomDemo1.js';
 import UpAndDownloadFilePage from './src/pages/UpAndDownloadFilePage.js';
+import ScrollTabViewPage from './src/pages/ScrollableTabView/ScrollTabViewPage.js'
 
 class App extends React.Component {
   render() {
@@ -49,7 +50,7 @@ class App extends React.Component {
         getSceneStyle={getSceneStyle}
       >
         <Scene key="root">
-          {/*<Scene key="test" component={UpAndDownloadFilePage} title="test"/>*/}
+          <Scene key="test" component={ScrollTabViewPage} title="test"/>
           <Scene key="DefaultPage" component={DefaultPage} title="index"/>
           <Scene key="ReactNativeVideoPage" component={ReactNativeVideoPage} title="react-native-video"/>
           <Scene key="RecordAndPlayPageOfficalDemo" component={RecordAndPlayPageOfficalDemo} title="audio sound"/>
