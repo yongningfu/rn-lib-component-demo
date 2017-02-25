@@ -20,6 +20,8 @@
  * 默认的情况下 Scrolltabbar的第一个激活的是 activiTab === 0  
  */
 
+
+// 为了更加简单的说明 这里没用到 传递过来的tabs 在模拟qqtabbar里面用的了
 import React, { Component } from 'react';
 import {
   View,

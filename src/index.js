@@ -41,6 +41,18 @@ export default class DefaultPage extends Component {
               onClick={() => { Actions.UpAndDownloadFilePage({}) }}>
           react-native-fetch-blob(上传下载)
         </Item>
+        <List renderHeader={() => 'react-native-scroll-tab-view'}>
+          <Item thumb="https://zos.alipayobjects.com/rmsportal/UmbJMbWOejVOpxe.png" 
+                arrow="horizontal"
+                onClick={() => { Actions.ScrollTabViewPage({}) }}>
+            自定义的tabbar
+          </Item>
+          <Item thumb="https://zos.alipayobjects.com/rmsportal/UmbJMbWOejVOpxe.png" 
+                arrow="horizontal"
+                onClick={() => { Actions.SimulateQQTabbarPage({}) }}>
+            模拟qq顶部tabbar
+          </Item>
+        </List>
       </List>
       </View>
     )
