@@ -1,34 +1,26 @@
 
 import React, { Component } from 'react';
 import {
-  AppRegistry,
   StyleSheet,
-  Text,
   View,
   Image,
-  Platform
 } from 'react-native';
 
 var Dimensions = require('Dimensions');
 var {height, width} = Dimensions.get('window');
 
-export default class ReactNativeVideoPage extends Component {
+export default class ImageCoverPage extends Component {
   
   constructor(props) {
     super(props);
-    this.state = {
-      selected: null,
-      imagePath: null, //代表图像是否下载了
-      placeHolder: '占位符是空的，快下载'
-    }
   }
 
   render() {
     return (
       <View style={styles.container}>
-        <Image source={require('../../assets/3.jpg')} style={styles.border}>
-          <Image source={require('../../assets/home_border.png')} style={styles.inLineImg}></Image>
+        <Image source={require('../../assets/3.jpg')} style={styles.backgroundImg}>
         </Image>
+        <Image source={require('../../assets/home_border.png')} style={styles.borderImg}></Image>
       </View>
     )
   }
@@ -36,19 +28,22 @@ export default class ReactNativeVideoPage extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
+    margin: 5,
   },
-  inLineImg: {
-    width: width,
-    height: 200,
+  backgroundImg: {
+
+    width: width - 15,
+    height: height / 4,
     resizeMode: 'stretch',
+    borderRadius: 10,
   },
-  border: {
-    width: width,
-    height: 200,
-    resizeMode: 'stretch'
+  borderImg: {
+    position: 'absolute',
+    width: width - 10,
+    height: height / 4,
+    resizeMode: 'stretch',
   }
 });
 

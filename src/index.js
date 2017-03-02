@@ -53,6 +53,11 @@ export default class DefaultPage extends Component {
             模拟qq顶部tabbar
           </Item>
         </List>
+        <Item thumb="https://zos.alipayobjects.com/rmsportal/UmbJMbWOejVOpxe.png" 
+                arrow="horizontal"
+                onClick={() => { Actions.SwiperPage({})}}>
+            react-native-swiper的简单使用
+        </Item>
       </List>
       </View>
     )
