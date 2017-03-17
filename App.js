@@ -44,6 +44,8 @@ import UpAndDownloadFilePage from './src/pages/UpAndDownloadFilePage.js';
 import ScrollTabViewPage from './src/pages/ScrollableTabView/ScrollTabViewPage.js';
 import SimulateQQTabbarPage  from './src/pages/ScrollableTabView/SimulateQQTabbarPage.js';
 import SwiperPage from './src/pages/SwiperPage.js';
+import AnimatedDemo from './src/pages/AnimatedDemo'
+
 class App extends React.Component {
   render() {
     return (
@@ -51,7 +53,7 @@ class App extends React.Component {
         getSceneStyle={getSceneStyle}
       >
         <Scene key="root">
-          {/*<Scene key="test" component={SwiperPage} title="test"/>*/}
+          <Scene key="test" component={AnimatedDemo} title="test"/>
           <Scene key="DefaultPage" component={DefaultPage} title="index"/>
           <Scene key="ReactNativeVideoPage" component={ReactNativeVideoPage} title="react-native-video"/>
           <Scene key="RecordAndPlayPageOfficalDemo" component={RecordAndPlayPageOfficalDemo} title="audio sound"/>
